@@ -7,10 +7,9 @@ public class Task1_test extends Base_Test
 	@Test
 	public void demo()
 	{
-	 ts1.clickonapplyoptions();	
 	 ts.enterCredentials();
-	 ts.clickoncaptcha();
-	 ts.clickonsubmit();
+//	 ts.clickoncaptcha();
+//	 ts.clickonsubmit();
 	}
 	
 	

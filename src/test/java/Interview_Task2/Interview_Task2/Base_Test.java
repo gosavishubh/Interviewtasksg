@@ -22,6 +22,7 @@ public class Base_Test
 		
 		ChromeOptions options=new ChromeOptions();
 		driver=new ChromeDriver(options);
+		driver.manage().window().maximize();
 		driver.get("https://tudip.com/contact/");
 
 	}

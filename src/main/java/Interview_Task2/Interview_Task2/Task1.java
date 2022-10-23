@@ -1,5 +1,7 @@
 package Interview_Task2.Interview_Task2;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +11,7 @@ public class Task1
 {
 public WebDriver driver;
 
-	@FindBy(xpath="//*[@id=\"catapultCookie\"]")
+	@FindBy(xpath="//*[@id='catapultCookie']")
 	WebElement cookies_button;
 	
 	@FindBy(xpath="//*[@name='first-name']")
@@ -44,6 +46,7 @@ public WebDriver driver;
 	
 	public void enterCredentials()
 	{
+		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		cookies_button.click();
 		firstname.sendKeys("shubhangi");
 		lastname.sendKeys("gosavi");
@@ -54,13 +57,13 @@ public WebDriver driver;
 		
 	}
 	
-	public void clickoncaptcha()
-	{
-		captcha.click();
-	}
-	public void clickonsubmit()
-	{
-		submit_button.click();
-	}
+//	public void clickoncaptcha()
+//	{
+//		captcha.click();
+//	}
+//	public void clickonsubmit()
+//	{
+//		submit_button.click();
+//	}
 	
 }
