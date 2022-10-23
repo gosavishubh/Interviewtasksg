@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Interview_Task2.Interview_Task2.Task1_test"/>
+       <class name="Interview_Task2.Interview_Task2.Task2_test"/>
+		
 		
     </classes>
 

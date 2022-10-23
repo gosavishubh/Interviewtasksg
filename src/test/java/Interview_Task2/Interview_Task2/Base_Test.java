@@ -13,7 +13,7 @@ public class Base_Test
 {
 	public static WebDriver driver;
 	public Task1 ts;
-	
+	public Task2 ts1;
 	
 	@BeforeSuite
 	public void initBrowser()
@@ -27,7 +27,11 @@ public class Base_Test
 	}
 	
 	@BeforeClass
-	public void objectcreation() {
+	public void objectcreation() 
+	{
 		ts=new Task1(driver);
+		ts1=new Task2(driver);
 	}
+	
+	
 }
