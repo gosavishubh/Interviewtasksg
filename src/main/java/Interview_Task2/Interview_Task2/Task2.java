@@ -48,6 +48,7 @@ public class Task2
 	@FindBy(xpath = "//*[@type='submit']")
 	WebElement submit_apply;
 	
+	
 	    public Task2(WebDriver driver)
 	{
 		this.driver=driver;

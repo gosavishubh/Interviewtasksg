@@ -47,6 +47,7 @@ public WebDriver driver;
 	public void enterCredentials()
 	{
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		driver.get("https://tudip.com/contact/");
 		cookies_button.click();
 		firstname.sendKeys("shubhangi");
 		lastname.sendKeys("gosavi");

@@ -14,6 +14,7 @@ public class Base_Test
 	public static WebDriver driver;
 	public Task1 ts;
 	public Task2 ts1;
+	public Task3 ts2;
 	
 	@BeforeSuite
 	public void initBrowser()
@@ -23,7 +24,6 @@ public class Base_Test
 		ChromeOptions options=new ChromeOptions();
 		driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("https://tudip.com/contact/");
 
 	}
 	
@@ -32,6 +32,7 @@ public class Base_Test
 	{
 		ts=new Task1(driver);
 		ts1=new Task2(driver);
+		ts2=new Task3(driver);
 	}
 	
 	
